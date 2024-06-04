@@ -1,13 +1,12 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Button from "@/components/ui/buttons/Button";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center  p-24">
-      <h1 className="mb-8">
+      <h3 className="mb-8 text-global">
         THE BEGINING OF NEW WORLD!
-      </h1>
-      <Button variant="destructive" >Click Me!</Button>
+      </h3>
+      <Button variant="success"  >Click Me!</Button>
         
     </main>
   );
