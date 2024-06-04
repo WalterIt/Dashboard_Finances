@@ -1,3 +1,5 @@
+'use client';
+
 import React, { createContext, FC, useState } from "react";
 import settings from "./setting";
 import SettingType from "./setting-types";
