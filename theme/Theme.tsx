@@ -11,6 +11,7 @@ export const ThemeContext = createContext<{
 }>({
   state: settings,
 });
+
 ThemeContext.displayName = "AppTheme";
 
 const Theme: FC<{ children: React.ReactNode }> = ({ children }) => {

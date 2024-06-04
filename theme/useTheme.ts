@@ -1,6 +1,8 @@
+'use client';
+
 import React, {useContext} from 'react';
 import SettingType from './setting-types';
-import { ThemeContext } from './theme';
+import { ThemeContext } from './Theme';
 import ThemeActionType from './theme-actions';
 
 const useTheme = (): {theme: SettingType, dispatch: ThemeActionType} => {

@@ -1,3 +1,5 @@
+'use client';
+
 import { FC } from "react";
 import FlexType from "./flex-type";
 import LayoutFlex from "./flex.styled";

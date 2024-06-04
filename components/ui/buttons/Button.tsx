@@ -1,3 +1,5 @@
+'use client';
+
 import { FC } from "react";
 import NormalButton from "./Button.style";
 import { ButtonType } from "./type";

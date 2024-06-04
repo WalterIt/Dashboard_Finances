@@ -1,3 +1,5 @@
+'use client';
+
 import { FC } from "react";
 import { GridType } from "./grid-type";
 import GridLayout from "./grid.styled";

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import FlexType from './flex-type';
-const layoutFlex = styled.div<FlexType>`
+
+const LayoutFlex = styled.div<FlexType>`
     min-width: 100%;
     width: 100%;
     display: flex;
@@ -16,4 +17,5 @@ const layoutFlex = styled.div<FlexType>`
     // content alignment
     justify-content: ${props => !props.justify ? 'flex-start' :  props.justify === 'center' ? 'center' : props.justify === 'around' ? 'space-around' : props.justify === 'between' ? 'space-between' : 'space-evenly'};
 `;
-export default layoutFlex;
+
+export default LayoutFlex;
