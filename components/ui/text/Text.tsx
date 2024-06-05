@@ -3,6 +3,7 @@
 import React, { FC } from "react";
 import TextType, { HeadingType } from "./text-type";
 import TextGlobal from "./text.styled";
+import useTheme from "@/theme/useTheme";
 
 const Text: FC<TextType> = ({
   children,
@@ -13,22 +14,40 @@ const Text: FC<TextType> = ({
   heading,
   color,
 }) => {
+  const {theme: {mode: { textColor },}
+
+
+  } = useTheme();
   return (
     <>
       <TextGlobal />
       {paragraph ? (
         <p
           className={`${variant}`}
-          style={{ fontSize: size, textAlign: align, color: color }}
+          style={{
+            fontSize: size,
+            textAlign: align,
+            color: color ? color : textColor,
+          }}
         >
           {children}
         </p>
       ) : heading ? (
-        <Heading variant={heading}>{children}</Heading>
+        <Heading
+          variant={heading}
+          color={color ? color : textColor}
+          align={align}
+        >
+          {children}
+        </Heading>
       ) : (
         <span
           className={`${variant}`}
-          style={{ fontSize: size, textAlign: align, color: color }}
+          style={{
+            fontSize: size,
+            textAlign: align,
+            color: color ? color : textColor,
+          }}
         >
           {children}
         </span>

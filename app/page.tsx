@@ -6,7 +6,7 @@ export default function Home() {
       <h3 className="mb-8 text-global">
         THE BEGINING OF NEW WORLD!
       </h3>
-      <Button >Click Me!</Button>
+      <Button variant="contained" width="200px"  border-radius="square">Click Me!</Button>
         
     </main>
   );

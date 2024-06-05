@@ -1,12 +1,10 @@
-'use client';
-
-import React, {useContext} from 'react';
-import SettingType from './setting-types';
+import { useContext } from 'react';
+import SettingType from './type';
 import { ThemeContext } from './Theme';
-import ThemeActionType from './theme-actions';
+import ThemeActionType from './themeAction';
 
-const useTheme = (): {theme: SettingType, dispatch: ThemeActionType} => {
-    const {state: theme, dispatch} = useContext(ThemeContext);
-    return {theme, dispatch: dispatch!};
+const useTheme = (): { theme: SettingType, dispatch: ThemeActionType } => {
+    const { state: theme, dispatch } = useContext(ThemeContext);
+    return { theme, dispatch: dispatch! };
 }
 export default useTheme;
